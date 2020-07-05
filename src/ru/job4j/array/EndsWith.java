@@ -4,12 +4,10 @@ public class EndsWith {
 
     public static boolean endsWith(char[] word, char[] post) {
         boolean result = true;
-        int indexWord = word.length - 1;
-        for (int index = post.length - 1; index >= 0; index--) {
-            if (word[indexWord] != post[index]) {
+        for (int index = 0; index <= post.length -1; index++) {
+            if (word[word.length - 1 - index] != post[post.length - 1 - index]) {
                 result = false;
-            } else {
-                indexWord--;
+                break;
             }
         }
         return result;
