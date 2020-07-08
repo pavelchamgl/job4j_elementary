@@ -17,9 +17,9 @@ public class SortSelectedTest {
 
     @Test
     public void whenSortThrei() {
-        int[] input = new int[] {3, 4, 1,};
+        int[] input = new int[] {3, 4, 1};
         int[] result = SortSelected.sort(input);
-        int[] expect = new int[] {1, 3, 4,};
+        int[] expect = new int[] {1, 3, 4};
         assertThat(result, is(expect));
     }
 }

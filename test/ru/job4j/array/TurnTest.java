@@ -9,7 +9,7 @@ public class TurnTest {
     @Test
     public void whenTurnArrayWithEvenAmountOfElementsThenTurnedArray() {
         Turn turner = new Turn();
-        int[] input = new int[] {4, 1, 6, 2,};
+        int[] input = new int[] {4, 1, 6, 2};
         int[] result = turner.back(input);
         int[] expect = new int[] {2, 6, 1, 4};
         assertThat(result, is(expect));
@@ -21,5 +21,6 @@ public class TurnTest {
         int[] input = new int[] {4, 1, 6, 2, 0};
         int[] result = turner.back(input);
         int[] expect = new int[] {0, 2, 6, 1, 4};
-        assertThat(result, is(expect));}
+        assertThat(result, is(expect));
+    }
 }
